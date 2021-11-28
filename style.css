@@ -82,6 +82,7 @@ h3{
 }
 
 .light-box:target{
+    position: fixed;
     transform: scale(1);
 }
 
