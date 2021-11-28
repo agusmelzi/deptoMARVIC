@@ -51,7 +51,7 @@ h3{
 .galeria img{
     width: 100%;
     vertical-align: top;
-    height: 300px;
+    height: 100px;
     object-fit: cover;
     transition: transform 0.5s;
 }
