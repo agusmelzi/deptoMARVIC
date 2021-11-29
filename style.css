@@ -77,12 +77,11 @@ h3{
 }
 
 .light-box img{
-    width: 40vw;
-    max-height: 90vh;
+    width: 50vw;
+    max-height: 110vh;
 }
 
 .light-box:target{
-    position: fixed;
     transform: scale(1);
 }
 
