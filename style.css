@@ -77,8 +77,10 @@ h3{
 }
 
 .light-box img{
-    width: 50vw;
-    max-height: 110vh;
+    max-width:100%;width:auto;height:auto;
+    /*width: 50vw;
+    max-height: 110vh;*/
+    
 }
 
 .light-box:target{
