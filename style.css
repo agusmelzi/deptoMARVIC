@@ -6,25 +6,32 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-    background-color: peachpuff;
+    font-weight: bolder;
+    font-size: 21px;
+    background-image: url(tandiltransp.png);
+    /* https://1.bp.blogspot.com/-a0Sr-1mOi_I/YA6kR3xkTrI/AAAAAAAAgP4/filI3_0ZwRoMzV-xVckrY8YrijJO7191QCLcBGAsYHQ/s947/IMG-20210124-WA0002%257E2.jpg*/
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1{
-    font-weight: 400;
+    font-weight: bolder;
     text-align: center;
     padding: 20px 0;
     font-size: 40px;
+    font-style: oblique;
 }
 
 h2{
-    font-weight: 400;
+    font-weight: bold;
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
 }
 
 h3{
-    font-weight: 400;
+    font-weight: bold;
     text-align: center;
     padding: 20px 0;
     font-size: 20px;
