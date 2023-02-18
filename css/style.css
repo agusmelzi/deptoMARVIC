@@ -1,0 +1,683 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+nav ul {
+  width: 100%;
+  margin: 0;
+  padding: 0px;
+  display: none;
+  flex-direction: column;
+  list-style-type: none;
+  overflow: hidden;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.contenedor {
+  position: relative;
+  padding-top: 138px;
+}
+
+nav ul.show {
+  display: flex;
+}
+
+.imgIzquierda {
+  width: 50%;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+  display: grid;
+  grid-template-areas:
+    "sectorLogo menu"
+    "lista lista lista";
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(191, 110, 110);
+  box-shadow: -2px 2px 14px 2px rgb(195, 141, 141);
+  margin-bottom: 21px;
+}
+
+.sectorLogo {
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: radial-gradient(rgb(30, 29, 29), rgb(82, 81, 81));
+}
+
+.menu a {
+  display: flex;
+  color: white;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 7px;
+  font-size: small;
+}
+
+.btnOne {
+  margin-right: 21px;
+  font-weight: bold;
+}
+
+.lista {
+  display: flex;
+  background-color: black;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: small;
+}
+
+nav ul li a:hover {
+  background-color: rgb(194, 43, 43);
+  color: white;
+  border-radius: 7px;
+}
+
+.videoPortadaAmplio {
+  display: none;
+}
+
+.videoPortada {
+  display: block;
+    margin: auto;
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    box-shadow: 0px 14px 24px 2px rgb(31, 10, 10);
+}
+
+.descripcionPortada {
+  background-color: rgb(172, 69, 69);
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  margin: 0;
+  padding: 28px 82px;
+  color: antiquewhite;
+}
+
+.descripcionPortada p {
+  margin: 0;
+}
+
+.ubicacion {
+  display: block;
+  margin: auto;
+  width: 95%;
+  padding-top: 20px;
+}
+
+.infoZona {
+  background-color: rgb(65, 141, 227);
+  /* background-color: rgb(14, 14, 239); */
+  color: aliceblue;
+  font-size: medium;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+}
+
+.infoZona ul li {
+  padding: 4px;
+}
+
+.infoZona h3 {
+  text-align: center;
+  padding-top: 14px;
+}
+
+.listaZona {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedorAbout {
+  display: grid;
+  grid-template-areas:
+    "descripcion"
+    "comodidades"
+    "pago";
+}
+
+.descripcion {
+  grid-area: descripcion;
+}
+.comodidades {
+  grid-area: comodidades;
+}
+.pago {
+  grid-area: pago;
+}
+
+.descripcion {
+  background-color: rgb(65, 141, 227);
+  color: aliceblue;
+  font-size: small;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  list-style-position: inside;
+}
+
+.descripcion ul {
+  padding: 0px 21px;
+}
+
+.descripcion ul li {
+  list-style-type: disc;
+  padding: 4px;
+}
+
+.comodidades {
+  background-color: rgb(202, 69, 69);
+  color: aliceblue;
+  font-size: small;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  list-style-position: inside;
+}
+
+.comodidades ul {
+  padding: 0px 21px;
+}
+
+.comodidades ul li {
+  list-style-type: disc;
+  padding: 4px;
+}
+
+.pago {
+  background-color: rgb(74, 183, 52);
+  color: aliceblue;
+  font-size: small;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  list-style-position: inside;
+}
+
+.pago ul {
+  padding: 0px 21px;
+  list-style-type: none;
+}
+
+.pago ul li {
+  padding: 4px;
+}
+
+.contenedorImg {
+  display: grid;
+  grid-template-areas:
+    "img1 img2 img3 img4"
+    "img5 img6 img7 img8"
+    "img9 img10 img11 img12"
+    "img13 img14 img15 img16"
+    "img17 img18 img19 img20"
+    "img21 img22 img23 img23";
+  gap: 0;
+}
+
+.img1 {
+  grid-area: img1;
+}
+.img2 {
+  grid-area: img2;
+}
+.img3 {
+  grid-area: img3;
+}
+.img4 {
+  grid-area: img4;
+}
+.img5 {
+  grid-area: img5;
+}
+.img6 {
+  grid-area: img6;
+}
+.img7 {
+  grid-area: img7;
+}
+.img8 {
+  grid-area: img8;
+}
+.img9 {
+  grid-area: img9;
+}
+.img10 {
+  grid-area: img10;
+}
+.img11 {
+  grid-area: img11;
+}
+.img12 {
+  grid-area: img12;
+}
+.img13 {
+  grid-area: img13;
+}
+.img14 {
+  grid-area: img14;
+}
+.img15 {
+  grid-area: img15;
+}
+.img16 {
+  grid-area: img16;
+}
+.img17 {
+  grid-area: img17;
+}
+.img18 {
+  grid-area: img18;
+}
+.img19 {
+  grid-area: img19;
+}
+.img20 {
+  grid-area: img20;
+}
+.img21 {
+  grid-area: img21;
+}
+.img22 {
+  grid-area: img22;
+}
+.img23 {
+  grid-area: img23;
+}
+
+.contenedorImg img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border: 0.2px solid black;
+}
+
+.imagen-activa {
+  width: 100%;
+  object-fit: cover;
+}
+
+.contenedor-principal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.91);
+}
+
+.contenedor-interno {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  color: aliceblue;
+  border: none;
+}
+
+.btn-cierra {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.7rem;
+}
+
+.btn-retrocede {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: 1.7rem;
+  color: whitesmoke;
+}
+
+.btn-adelanta {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  font-size: 1.7rem;
+  color: whitesmoke;
+}
+
+footer {
+  text-align: center;
+  padding: 28px 49px;
+  margin-top: 24px;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: rgb(191, 110, 110);
+  box-shadow: -2px 2px 14px 2px rgb(195, 141, 141);
+  margin-bottom: 21px;
+  font-size: 18px;
+  font-family: "Dancing Script", cursive;
+  margin-bottom: 0;
+  background-color: black;
+  color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  width: 28%;
+  margin-right: 14px;
+}
+
+@media only screen and (min-width: 415px) {
+  .imgIzquierda {
+    width: 30%;
+  }
+
+  .contenedor {
+    position: relative;
+    padding-top: 158px;
+  }
+
+  .lista li {
+    font-size: large;
+  }
+
+  .videoPortadaAmplio {
+    display: block;
+    margin: auto;
+    width: 70%;
+    box-shadow: 0px 14px 24px 2px rgb(202, 69, 69);
+  }
+
+  .videoPortada {
+    display: none;
+  }
+
+  .descripcionPortada {
+    background-color: rgb(172, 69, 69);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 0;
+    padding: 42px 582px;
+    color: antiquewhite;
+  }
+  
+  .descripcionPortada p {
+    margin: 0;
+  }
+
+  .ubicacion {
+    display: block;
+    margin: auto;
+    width: 80%;
+    padding-top: 20px;
+  }
+
+  .infoZona {
+    background-color: rgb(65, 141, 227);
+    color: aliceblue;
+    font-size: larger;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .infoZona ul li {
+    padding: 4px;
+  }
+
+  .infoZona h3 {
+    text-align: center;
+    padding-top: 14px;
+  }
+
+  .listaZona {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contenedorAbout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "descripcion pago"
+      "comodidades pago";
+  }
+
+  .descripcion {
+    background-color: rgb(65, 141, 227);
+    color: aliceblue;
+    font-size: large;
+    font-family: "Courier New", Courier, monospace;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style-position: inside;
+    align-items: center;
+    box-shadow: -2px 2px 14px 2px rgb(65, 141, 227);
+  }
+
+  .descripcion ul {
+    padding: 0px 21px;
+  }
+
+  .descripcion ul li {
+    list-style-type: disc;
+    padding: 4px;
+  }
+
+  .comodidades {
+    background-color: rgb(202, 69, 69);
+    color: aliceblue;
+    font-size: large;
+    font-family: "Courier New", Courier, monospace;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style-position: inside;
+    align-items: center;
+    box-shadow: -2px 2px 14px 2px rgb(202, 69, 69);
+  }
+
+  .comodidades ul {
+    padding: 0px 21px;
+  }
+
+  .comodidades ul li {
+    list-style-type: disc;
+    padding: 4px;
+  }
+
+  .pago {
+    background-color: rgb(74, 183, 52);
+    color: aliceblue;
+    font-size: x-large;
+    font-family: "Courier New", Courier, monospace;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style-position: inside;
+    align-items: center;
+    padding: 0px 49px;
+    box-shadow: -2px 2px 14px 2px rgb(74, 183, 52);
+  }
+
+  .pago ul {
+    list-style-type: none;
+  }
+
+  .pago ul li {
+    padding: 4px;
+  }
+
+  .contenedorImg {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "img1 img2 img3 img4"
+      "img5 img6 img7 img8"
+      "img9 img10 img11 img12"
+      "img13 img14 img15 img16"
+      "img17 img18 img19 img20"
+      "img21 img22 img23 img23";
+  }
+
+  .contenedorImg img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border: 0.2px solid black;
+  }
+
+  .imagen-activa {
+    width: 100%;
+    max-height: 390px;
+  }
+
+  .contenedor-principal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.91);
+  }
+
+  .contenedor-interno {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  footer {
+    font-size: 28px;
+  }
+
+  footer img {
+    width: 14%;
+    margin-right: 14px;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .menu {
+    display: none;
+  }
+
+  nav ul {
+    list-style-type: none;
+    background-color: white;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .imgIzquierda {
+    width: 50%;
+  }
+
+  .lista {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    text-align: right;
+    font-size: x-large;
+    margin-right: 21px;
+  }
+
+  .lista li {
+    font-size: medium;
+  }
+
+  .contenedor {
+    position: relative;
+    padding-top: 150px;
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: "sectorLogo lista";
+  }
+
+  nav ul {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    list-style-type: none;
+    overflow: hidden;
+    font-family: "Courier New", Courier, monospace;
+    text-align: right;
+  }
+
+  nav ul li {
+    float: right;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  nav ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 28px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .contenedorImg {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      "img1 img2 img3 img4 img5 img6"
+      "img7 img8 img9 img10 img11 img12"
+      "img13 img14 img15 img16 img17 img18"
+      "img19 img20 img21 img22 img23 img23";
+  }
+
+  .imagen-activa {
+    width: 100%;
+    max-height: 690px;
+  }
+}
