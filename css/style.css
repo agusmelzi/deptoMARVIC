@@ -429,7 +429,7 @@ footer img {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     margin: 0;
-    padding: 42px 282px;
+    padding: 42px 82px;
     color: antiquewhite;
   }
   
@@ -690,5 +690,18 @@ footer img {
   .imagen-activa {
     width: 100%;
     max-height: 690px;
+  }
+
+  .descripcionPortada {
+    background-color: rgb(172, 69, 69);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 0;
+    padding: 42px 282px;
+    color: antiquewhite;
+  }
+  
+  .descripcionPortada p {
+    margin: 0;
   }
 }
